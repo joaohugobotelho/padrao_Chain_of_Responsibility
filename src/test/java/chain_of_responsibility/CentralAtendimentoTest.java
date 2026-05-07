@@ -10,7 +10,7 @@ public class CentralAtendimentoTest {
         CentralAtendimento central = new CentralAtendimento();
 
         assertEquals(
-                "Suporte Básico resolveu o problema de senha.",
+                "Suporte Básico resolveu o problema de senha.", // suporte basico resolve
                 central.atender("senha")
         );
     }
@@ -20,7 +20,7 @@ public class CentralAtendimentoTest {
         CentralAtendimento central = new CentralAtendimento();
 
         assertEquals(
-                "Suporte Técnico resolveu o problema de internet.",
+                "Suporte Técnico resolveu o problema de internet.", // suporte tecnico resolve o problema
                 central.atender("internet")
         );
     }
@@ -30,14 +30,14 @@ public class CentralAtendimentoTest {
         CentralAtendimento central = new CentralAtendimento();
 
         assertEquals(
-                "Gerente resolveu o problema financeiro.",
+                "Gerente resolveu o problema financeiro.",  // gerente resolve o financeiro
                 central.atender("financeiro")
         );
     }
 
     @Test
     public void deveRetornarProblemaNaoResolvido() {
-        CentralAtendimento central = new CentralAtendimento();
+        CentralAtendimento central = new CentralAtendimento();  // cai aqui se ninguem conseguir resolver o problema
 
         assertEquals(
                 "Problema não resolvido.",
